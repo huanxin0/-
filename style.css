@@ -1,0 +1,155 @@
+
+* {
+	outline: none;
+}
+
+::selection {
+	background-color: rgba(147, 107, 255, 0.286);
+}
+
+::-moz-selection {
+	background-color: rgba(147, 107, 255, 0.286);
+}
+
+body {
+	text-align: center;
+	background-color: #f1eff6;
+}
+
+a {
+	text-decoration: none;
+	color: #f00;
+	border-radius: 2px;
+}
+
+a:hover,
+input[type="checkbox"]+label:hover,
+input[type="radio"]+label:hover {
+	background-color: rgba(60, 251, 76, 0.286);
+}
+
+a:active {
+	background-color: rgba(25, 240, 43, 0.427);
+}
+
+button,
+input[type="button"],
+input[type="file"]+label {
+	background-color: #4ca951;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+	font: 0.9em sans-serif;
+	padding: 0.1em 0.6em;
+	margin: 0.1em;
+}
+
+button:hover,
+input[type="button"]:hover,
+input[type="file"]+label:hover {
+	background-color: #57d15d;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="file"]+label:active {
+	background-color: #37723a;
+}
+
+button,
+label,
+input[type="button"] {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	user-select: none;
+}
+
+input[type="checkbox"],
+input[type="file"],
+input[type="radio"],
+.hide {
+	display: none;
+}
+
+input[type="checkbox"]+label::before {
+	font: 0.9em icomoon;
+	content: "\ea53";
+	margin-left: 0.4em;
+	margin-right: 0.2em;
+}
+
+input[type="checkbox"]:checked+label::before {
+	font: 0.9em icomoon;
+	content: "\ea52";
+	margin-left: 0.4em;
+	margin-right: 0.2em;
+}
+
+input[type="radio"]+label::before {
+	font: 0.9em icomoon;
+	content: "\ea56";
+	margin-left: 0.4em;
+	margin-right: 0.2em;
+}
+
+input[type="radio"]:checked+label::before {
+	font: 0.9em icomoon;
+	content: "\ea54";
+	margin-left: 0.4em;
+	margin-right: 0.2em;
+}
+
+textarea,
+input[type="text"] {
+	border: 1px solid #888;
+	border-radius: 2px;
+	padding: 0.2em;
+	margin: 1px;
+}
+
+.title {
+	color: #00f;
+}
+
+.info,
+strong.error {
+	color: #f00;
+}
+
+strong.warning {
+	color: #fa0;
+}
+
+strong.accept {
+	color: #080;
+}
+
+.index {
+	width: 60vw;
+	max-width: 270px;
+	display: flex;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+	align-items: stretch;
+}
+
+.index a {
+	border: 2px solid #37723a;
+	border-radius: 5px;
+	padding: 10px;
+}
+
+.profile {
+	font: 13.33px sans-serif;
+	line-height: 1.5;
+}
+
+.disabled {
+	opacity: 0.2;
+	pointer-events: none;
+}
+
+.fade {
+	visibility: hidden;
+}
